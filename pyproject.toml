@@ -1,0 +1,25 @@
+[project]
+name = "python-app-base-layout"
+version = "0.1.2"
+description = "This repository provides a basic layout for Python applications."
+authors = [{ name = "Denis Ustinov", email = "plods.codling02@icloud.com" }]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "python-dotenv==1.0.1",
+    "python-json-logger==3.3.0",
+    "SQLAlchemy==2.0.39",
+    "asyncpg==0.30.0",
+    "aiohttp==3.11.14",
+    "backoff==2.2.1"
+]
+
+[project.urls]
+Homepage = "https://github.com/DenisUstinov/python-app-base-layout"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["app1"]
